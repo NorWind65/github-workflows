@@ -1,10 +1,8 @@
 name: Build, Push, Ssh, Pull, Down, Up
-
 on:
   push:
     branches:
       - 'staging'
-
 jobs:
   build-and-push:
     name: Build
@@ -32,7 +30,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: bsignbkc/express-sample-project:staging
+          tags: norwind/cicd2024:ggwp
 
 
   pull-and-up:
